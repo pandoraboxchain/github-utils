@@ -5,7 +5,7 @@ Command-line utility for working with GitHub repositories
 
 ## Install
 ```sh
-npm i --save github-utils@https://github.com/pandoraboxchain/github-utils.git#0.1.0
+npm i --save github-utils@https://github.com/pandoraboxchain/github-utils.git#0.1.1
 ```
 you can use `-g` flag to install this module globally  
 
