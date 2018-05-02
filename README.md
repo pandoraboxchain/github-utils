@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9d9fb572026148c8bb1773ec5b330c7e)](https://www.codacy.com/app/kostysh/github-utils?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pandoraboxchain/github-utils&amp;utm_campaign=Badge_Grade) [![Known Vulnerabilities](https://snyk.io/test/github/pandoraboxchain/github-utils/badge.svg)](https://snyk.io/test/github/pandoraboxchain/github-utils)
+
 # github-utils
 Command-line utility for working with GitHub repositories  
 
