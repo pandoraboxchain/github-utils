@@ -1,0 +1,36 @@
+{
+  "name": "github-issue",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Command-line utility for creating issues on GitHub repositories",
+  "main": "index.js",
+  "bin": {
+    "ghic": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pandoraboxchain/github-issue.git"
+  },
+  "keywords": [
+    "github",
+    "issue",
+    "cli",
+    "command-line"
+  ],
+  "author": "Kostiantyn Smyrnov <kostysh@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pandoraboxchain/github-issue/issues"
+  },
+  "homepage": "https://github.com/pandoraboxchain/github-issue#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1"
+  },
+  "dependencies": {
+    "@octokit/rest": "^15.2.7",
+    "caporal": "^0.10.0"
+  }
+}
