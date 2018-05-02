@@ -7,9 +7,13 @@ const { create } = require('./issue');
 
 program
     .version(pack.version)
-    .description('GitHub issue creator')
-    .option('-k, --api-key <api-key>', 'GihHub API key', /^[\S]+$/, undefined, true)
+    .description(pack.description)
+    
+// "issue" command
+    .command('issue', 'Create an issue on GitHub repositories')
     .option('-d, --debug', 'Enable debug mode')
+    .option('-k, --api-token, --api-key <api-key>', 'GihHub access API key', /^[\S]+$/i, undefined, true)
+    .option('-o, --owner <owner>', 'GitHub repository owner', /^[\S]+$/i, undefined, true)
     .option('-r, --repositories <repositories>', 'Targeted GitHub repositories (can be coma separated)', program.LIST, undefined, true)
     .option('-t, --title <title>', 'Issue title', /^[\wа-яё\s]+$/i, undefined, true)
     .option('-b, --body <body>', 'Issue body', /^[\wа-яё\s]+$/i, undefined, true)
