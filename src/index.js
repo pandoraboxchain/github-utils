@@ -16,7 +16,7 @@ program
     .option('-o, --owner <owner>', 'GitHub repository owner', /^[\S]+$/i, undefined, true)
     .option('-r, --repositories <repositories>', 'Targeted GitHub repositories (can be coma separated)', program.LIST, undefined, true)
     .option('-t, --title <title>', 'Issue title', /^[\wа-яё\s]+$/i, undefined, true)
-    .option('-b, --body <body>', 'Issue body', /^[\wа-яё\s:",\n]+$/i, undefined, true)
+    .option('-b, --body <body>', 'Issue body', undefined, undefined, true)
     .action(create);
 
 program.parse(process.argv);
