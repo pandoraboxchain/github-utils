@@ -5,14 +5,14 @@ Command-line utility for working with GitHub repositories
 
 ## Install
 ```sh
-npm i --save github-utils@https://github.com/pandoraboxchain/github-utils.git#v0.1.2
+npm i --save github-utils@https://github.com/pandoraboxchain/github-utils.git#v0.1.4
 ```
 you can use `-g` flag to install this module globally  
 
 ## Getting utility version 
 ```sh
 ghu --version
-0.1.0
+0.1.4
 ```
 
 ## Getting help
@@ -24,7 +24,7 @@ for example:
 ```sh
 ghu help issue
 
-   ghu 0.1.0 - Command-line utility for working with GitHub repositories
+   ghu 0.1.4 - Command-line utility for working with GitHub repositories
 
    USAGE
 
