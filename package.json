@@ -8,7 +8,9 @@
     "ghu": "./index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -28,10 +30,12 @@
   "homepage": "https://github.com/pandoraboxchain/github-utils#readme",
   "dependencies": {
     "@octokit/rest": "^15.6.1",
-    "caporal": "^0.10.0"
+    "caporal": "^0.10.0",
+    "snyk": "^1.170.0"
   },
   "devDependencies": {
     "eslint": "^4.19.1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
