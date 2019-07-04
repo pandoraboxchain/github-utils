@@ -1,9 +1,15 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.11.0
+version: v1.13.5
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:lodash:20180130':
     - caporal > cli-table2 > lodash:
         reason: wontfix
         expires: '2019-06-01T21:27:41.071Z'
-patch: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - '@octokit/rest > lodash':
+        patched: '2019-07-04T08:39:59.168Z'
+    - caporal > tabtab > inquirer > lodash:
+        patched: '2019-07-04T08:39:59.168Z'
